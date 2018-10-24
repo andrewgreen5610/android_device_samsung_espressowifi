@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_espressowifi.mk \
-    $(LOCAL_DIR)/omni_espressowifi.mk
+    $(LOCAL_DIR)/aosp_gtelwifiue.mk \
+    $(LOCAL_DIR)/omni_gtelwifiue.mk
