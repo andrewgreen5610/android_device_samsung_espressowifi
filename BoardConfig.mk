@@ -18,4 +18,4 @@
 include device/samsung/gtelwifiue/BoardConfigCommon.mk
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := gtel-common,t560,SM-T560
+TARGET_OTA_ASSERT_DEVICE := gtel-common,t560,SM-T560UE
