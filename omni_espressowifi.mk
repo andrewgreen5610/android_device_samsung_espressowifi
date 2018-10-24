@@ -15,22 +15,22 @@
 #
 
 # Bootanimation
-TARGET_BOOTANIMATION_SIZE := 480x320
+TARGET_BOOTANIMATION_SIZE := 1200x800
 
 # Inherit common Omni configuration
 $(call inherit-product, vendor/omni/config/common_tablet.mk)
 
 # OmniRom specific overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/espressowifi/overlay/custom-common
+DEVICE_PACKAGE_OVERLAYS += device/samsung/gtelwifiue/overlay/custom-common
 
 # Inherit device specific configuration
-$(call inherit-product, device/samsung/espressowifi/aosp_espressowifi.mk)
+$(call inherit-product, device/samsung/gtelwifiue/aosp_gtelwifiue.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := omni_espressowifi
+PRODUCT_NAME := omni_gtelwifiue
 
 # Device build info and fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=espresso10wifixx \
-    BUILD_FINGERPRINT="samsung/espresso10wifixx/espresso10wifi:4.2.2/JDQ39/P5110XXDML1:user/release-keys" \
-    PRIVATE_BUILD_DESC="espresso10wifixx-user 4.2.2 JDQ39 P5110XXDML1 release-keys"
+    PRODUCT_NAME=gtelwifiue \
+    BUILD_FINGERPRINT="samsung/gtelwifiue/gtelwifiue:4.2.2/OPM6.171019.030.K1/1983eb9a85:userdebug/test-keys" \
+    PRIVATE_BUILD_DESC="gtelwifiue-user 4.2.2 OPM6.171019.030.K1 1983eb9a85 test-keys"
